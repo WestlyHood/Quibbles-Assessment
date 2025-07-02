@@ -1,0 +1,155 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Community Header */
+    .community-header {
+      background: linear-gradient(90deg, #4682b4, #6ca0dc);
+      padding: 30px 20px;
+      color: white;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .community-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .community-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .community-info img {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      margin-right: 15px;
+    }
+
+    .community-meta {
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .join-btn {
+      background-color: dodgerblue;
+      border: none;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .recommended-label {
+      margin: 30px 0 10px;
+      font-size: 15px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Post Card */
+    .post-card {
+      background-color: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+
+    .post-body {
+      display: flex;
+    }
+
+    .votes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #888;
+    }
+
+    .votes span {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .votes span:hover {
+      color: dodgerblue;
+    }
+
+    .post-main {
+      flex: 1;
+    }
+
+    .post-meta {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .post-tag {
+      display: inline-block;
+      font-size: 12px;
+      background-color: #e7f3ff;
+      color: #0056b3;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-right: 5px;
+    }
+
+    .post-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 5px 0 10px;
+    }
+
+    .post-content img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .post-footer {
+      font-size: 13px;
+      color: #666;
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .post-body {
+        flex-direction: column;
+      }
+
+      .votes {
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 10px;
+        justify-content: start;
+      }
+
+      .community-info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .join-btn {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }

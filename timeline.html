@@ -1,0 +1,226 @@
+<!-- timeline.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYSC Community - Timeline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Community Header */
+    .community-header {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .community-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .community-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .community-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+
+    .stats {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .join-button {
+      background-color: dodgerblue;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .bell {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    /* Post Card */
+    .post-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .post-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .post-content img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .post-footer {
+      font-size: 13px;
+      color: #666;
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .votes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .votes span {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .post-body {
+      display: flex;
+    }
+
+    .vote-col {
+      margin-right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .community-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .post-body {
+        flex-direction: column;
+      }
+
+      .votes {
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 10px;
+      }
+
+      .vote-col {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Community Header -->
+    <div class="community-header">
+      <div class="community-top">
+        <div class="community-info">
+          <img src="images/NYSC.svg" alt="NYSC Logo" />
+          <div>
+            <h2 style="margin: 0;">NYSC</h2>
+            <p style="margin: 5px 0; font-size: 14px;">
+              Hello! Here we discuss all things NYSC – including posting, camp experience, PPA, CDS, clearance, POP and even post NYSC job opportunities. Use this opportunity to share and get any NYSC related information. Corper wee!
+            </p>
+            <div class="stats">
+              0 Members · 0 Online · Created 4 months ago
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="join-button">Join</button>
+          <span class="bell">🔔</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 1 -->
+    <div class="post-card">
+      <div class="post-body">
+        <div class="votes">
+          <span>⬆</span>
+          <span>3</span>
+          <span>⬇</span>
+        </div>
+        <div style="flex: 1;">
+          <div class="post-header">
+            <span>📢 News • Posted by bytephantom · 4 days ago</span>
+          </div>
+          <div class="post-title">JUST IN: Nigeria’s money supply hits ₦118.99 trillion</div>
+          <div class="post-content">
+            <img src="images/news1.jpg" alt="Money Supply" />
+          </div>
+          <div class="post-footer">
+            <span>💬 0 Comments</span>
+            <span>🔗 Share</span>
+            <span>🚩 Report</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post-card">
+      <div class="post-body">
+        <div class="votes">
+          <span>⬆</span>
+          <span>2</span>
+          <span>⬇</span>
+        </div>
+        <div style="flex: 1;">
+          <div class="post-header">
+            <span>🧢 NYSC • Posted by echodash · 7 days ago</span>
+          </div>
+          <div class="post-title">
+            JUST IN: NYSC denies extending service year of Lagos corper Rita for criticising the government
+          </div>
+          <div class="post-content">
+            <img src="images/news2.jpg" alt="Rita Uguamay" />
+          </div>
+          <div class="post-footer">
+            <span>💬 0 Comments</span>
+            <span>🔗 Share</span>
+            <span>🚩 Report</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
